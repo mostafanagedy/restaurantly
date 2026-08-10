@@ -1,6 +1,8 @@
 
 لزيارة الموقع اضغط علي الرابط التالي:
-[https://mostafanagedy.github.io/restaurantly/](https://mostafanagedy.github.io/restaurantly/)
+[https://mostafanagedy.github.io/restaurantly/]
+
+(https://mostafanagedy.github.io/restaurantly/)
 
 
 
