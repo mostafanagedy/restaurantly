@@ -185,6 +185,7 @@ const RESTAURANTLY_I18N = {
     msgBookSent: "Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!",
     msgContactSent: "Your message has been sent. Thank you!",
     msgNewsSent: "Your subscription request has been sent. Thank you!",
+    docTitle: "Restaurantly - Luxury Restaurant & Fine Dining",
     copyright: "© Copyright <strong>Restaurantly</strong> All Rights Reserved",
     credits: 'Designed & Developed by <a href="#" style="color: var(--accent-color); font-weight: 700;">Mostafa Nagedy</a>',
     floatingBtnText: "العربية"
@@ -371,6 +372,7 @@ const RESTAURANTLY_I18N = {
     msgBookSent: "تم استلام طلب حجز الطاولة بنجاح! وسنقوم بالتواصل معكم قريباً لتأكيد الحجز. شكراً لكم!",
     msgContactSent: "تم إرسال رسالتكم بنجاح. شكراً لتواصلكم معنا!",
     msgNewsSent: "تم الإشتراك في النشرة البريدية بنجاح. شكراً لك!",
+    docTitle: "مطعم ريستورانتلي | مأكولات فاخرة وراقية",
     copyright: "© جميع الحقوق محفوظة لـ <strong>مطعم ريستورانتلي</strong>",
     credits: 'تصميم وتطوير بواسطة <a href="#" style="color: var(--accent-color); font-weight: 700;">مصطفى نجدي</a>',
     floatingBtnText: "English"
@@ -397,6 +399,10 @@ class RestaurantlyI18n {
 
     const dict = RESTAURANTLY_I18N[lang];
     if (!dict) return;
+
+    if (dict['docTitle']) {
+      document.title = dict['docTitle'];
+    }
 
     // Inner text replacement for elements with data-i18n
     document.querySelectorAll('[data-i18n]').forEach(el => {

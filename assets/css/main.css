@@ -1764,6 +1764,27 @@ section,
 /*--------------------------------------------------------------
 # Language Switcher & RTL Support
 --------------------------------------------------------------*/
+.site-header-logo {
+  max-height: 42px;
+  width: auto;
+  border-radius: 50%;
+  border: 2px solid var(--accent-color);
+  margin-right: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(205, 164, 94, 0.4);
+}
+
+.site-header-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(205, 164, 94, 0.7);
+}
+
+[dir="rtl"] .site-header-logo {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
 .floating-lang-btn {
   position: fixed;
   bottom: 25px;
